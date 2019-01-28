@@ -1,0 +1,81 @@
+{
+    "name": "qb64",
+    "displayName": "QB64",
+    "description": "QB64 - QBasic language support & compiler",
+    "version": "0.0.1",
+    "author": {
+        "name": "QB64 Community"
+    },
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets",
+        "Linters",
+        "Debuggers",
+        "Formatters"
+    ],
+    "scripts": {},
+    "dependencies": {
+        "diff": "^3.5.0",
+        "json-rpc2": "^1.0.2",
+        "vscode-debugadapter": "^1.32.1",
+        "vscode-debugprotocol": "^1.32.0",
+        "vscode-extension-telemetry": "^0.1.0",
+        "vscode-languageclient": "~5.2.1"
+    },
+    "devDependencies": {
+        "vscode": "^1.1.26"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "qbasic",
+                "aliases": [
+                    "QB64",
+                    "qbasic",
+                    "basic"
+                ],
+                "extensions": [
+                    ".bas",
+                    ".qb",
+                    ".qbasic"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "qbasic",
+                "scopeName": "source.qbasic",
+                "path": "./syntaxes/qbasic.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "qbasic",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "configurationDefaults": {
+            "[go]": {
+              "editor.insertSpaces": false,
+              "editor.formatOnSave": true
+            }
+        }
+    },
+    "debuggers": [
+        {
+          "type": "qb64",
+          "label": "qb64",
+          "enableBreakpointsFor": {
+            "languageIds": [
+              "qb64",
+              "qb",
+              "qbasic"
+            ]
+          }
+        }
+    ]
+}
