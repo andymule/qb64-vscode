@@ -1,3 +1,5 @@
+***This is the generated README from yo***
+
 # bas README
 
 This is the README for your extension "bas". After writing up a brief description, we recommend including the following sections.
