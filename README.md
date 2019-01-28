@@ -1,4 +1,4 @@
-***This is the generated README from yo***
+***This is the generated README from yo, it's kind of meaningless to GITHUB....***
 
 # bas README
 
